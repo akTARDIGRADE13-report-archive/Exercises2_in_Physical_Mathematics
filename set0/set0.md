@@ -112,7 +112,7 @@ e^{in\theta} &= \qty(e^{i\theta})^n \\
 \end{aligned}
 $$
 
-Therefore,
+Therefore, we get the following:
 
 ### (a)
 
