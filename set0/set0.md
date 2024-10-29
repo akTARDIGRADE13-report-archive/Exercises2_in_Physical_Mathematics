@@ -390,3 +390,42 @@ Therefore, the general solution is:
 $$
 y = A e^{2x} + B e^{x} + \frac{3}{10} \cos x + \frac{3}{10} \sin x.
 $$
+
+
+## Problem 10
+
+If $m > n$, $z^{m-n-1}$ is analytic on $\mathbb{C}$, so 
+
+$$
+\frac{1}{2\pi i}\oint z^n \dd{z} = 0.
+$$
+
+If $m < n$, $z^n$ is a simple pole at $z = 0$.
+
+The Laurent series expansion of $z^{m-n-1}$ around $z = 0$ is simply $z^{m-n-1}$ itself.
+
+Thus, the residue is:
+
+$$
+\Res_{z=0} z^{m-n-1} = \begin{cases}
+1 & (m = n), \\
+0 & (m \neq n).
+\end{cases}
+$$
+
+By the residue theorem, we have:
+
+$$
+\begin{aligned}
+\frac{1}{2\pi i}\oint z^{m-n-1} \dd{z} &= \begin{cases}
+1 & (m = n), \\
+0 & (m \neq n).
+\end{cases}
+\end{aligned}
+$$
+
+Therefore,
+
+$$
+\frac{1}{2\pi i}\oint z^{m-n-1} \dd{z} = \delta_{m,n}.
+$$
