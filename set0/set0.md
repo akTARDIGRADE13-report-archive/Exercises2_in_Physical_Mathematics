@@ -153,8 +153,6 @@ $$
 I = \int_{0}^{\infty} e^{-at} \sin bt \dd{t}.
 $$
 
-Then,
-
 $$
 \begin{aligned}
 I &= \int_{0}^{\infty} e^{-at} \sin bt \dd{t} \\
@@ -219,3 +217,95 @@ $$
 \end{aligned}
 $$
 
+## Problem 8
+
+### (a)
+
+First, we solve the following differential equation:
+
+$$
+L \dv{I(t)}{t} + RI(t) = 0
+$$
+
+The solution is:
+
+$$
+I(t) = I(0) e^{-\frac{R}{L} t}.
+$$
+
+Next, we solve the following differential equation:
+
+$$
+L \dv{I(t)}{t} + RI(t) = V_0.
+$$
+
+The solution is:
+
+$$
+I(t) = \frac{V_0}{R} + \qty(I(0) - \frac{V_0}{R}) e^{-\frac{R}{L} t}.
+$$
+
+By the initial condition $I(0) = 0$, we get:
+
+$$
+I(t) = \frac{V_0}{R} \qty(1 - e^{-\frac{R}{L} t}).
+$$
+
+### (b)
+
+We assume that particular solution be of the following form:
+
+$$
+I(t) = A \cos \omega t + B \sin \omega t.
+$$
+
+This results in:
+
+$$
+\begin{aligned}
+L \dv{I(t)}{t} + RI(t) &= -L A \omega \sin \omega t + L B \omega \cos \omega t + R A \cos \omega t + R B \sin \omega t \\
+&= (R A + L B \omega) \cos \omega t + (- L A \omega + R B) \sin \omega t.
+\end{aligned}
+$$
+
+Therefore, we get the following equations:
+
+$$
+\begin{aligned}
+R A - L B \omega &= V_0, \\
+- L A \omega + R B &= 0.
+\end{aligned}
+$$
+
+Solving the above equations, we get:
+
+$$
+\begin{aligned}
+A &= \frac{V_0 \omega L}{R^2 + \omega^2L^2}, \\
+B &= \frac{V_0 R}{R^2 + \omega^2 L^2}.
+\end{aligned}
+$$
+
+Therefore, the particular solution is:
+
+$$
+I(t) = \frac{V_0 \omega L}{R^2 + \omega^2L^2} \cos \omega t + \frac{V_0 R}{R^2 + \omega^2 L^2} \sin \omega t.
+$$
+
+The general solution is the sum of the homogeneous solution and the particular solution:
+
+$$
+I(t) = Ce^{-\frac{R}{L} t} + \frac{V_0 \omega L}{R^2 + \omega^2L^2} \cos \omega t + \frac{V_0 R}{R^2 + \omega^2 L^2} \sin \omega t.
+$$
+
+ $C$ is determined by the initial condition $I(0) = 0$:
+
+$$
+C = -\frac{V_0 \omega L}{R^2 + \omega^2L^2}.
+$$
+
+Therefore, the solution is:
+
+$$
+I(t) = \frac{V_0 \omega L}{R^2 + \omega^2L^2} \qty(\cos \omega t - e^{-\frac{R}{L} t}) + \frac{V_0 R}{R^2 + \omega^2 L^2} \sin \omega t.
+$$
