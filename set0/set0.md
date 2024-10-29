@@ -309,3 +309,84 @@ Therefore, the solution is:
 $$
 I(t) = \frac{V_0 \omega L}{R^2 + \omega^2L^2} \qty(\cos \omega t - e^{-\frac{R}{L} t}) + \frac{V_0 R}{R^2 + \omega^2 L^2} \sin \omega t.
 $$
+
+
+## Problem 9
+
+### (a)
+
+The solution of the homogeneous equation is:
+
+$$
+y_h = A e^{ix} + B e^{-ix}.
+$$
+
+The particular solution is:
+
+$$
+y_p = 2.
+$$
+
+Therefore, the general solution is:
+
+$$  
+y = A e^{ix} + B e^{-ix} + 2.
+$$
+
+### (b)
+
+The solution of the homogeneous equation is:
+
+$$
+y_h = A e^{2ix} + B e^{-2ix}.
+$$
+
+The particular solution is:
+
+$$
+y_p = e^{x}.
+$$
+
+Therefore, the general solution is:
+
+$$
+y = A e^{2ix} + B e^{-2ix} + e^{x}.
+$$
+
+### (c)
+
+The solution of the homogeneous equation is:
+
+$$
+y_h = A e^{2x} + B e^{x}.
+$$
+
+We assume that the particular solution is of the form:
+
+$$
+y_p = C \cos x + D \sin x.
+$$
+
+Then, we get the following equations:
+
+$$
+\begin{aligned}
+C + 3D &= 0, \\
+-3C + D &= 1.
+\end{aligned}
+$$
+
+Solving the above equations, we get:
+
+$$
+\begin{aligned}
+C &= \frac{3}{10}, \\
+D &= \frac{1}{10}.
+\end{aligned}
+$$
+
+Therefore, the general solution is:
+
+$$
+y = A e^{2x} + B e^{x} + \frac{3}{10} \cos x + \frac{3}{10} \sin x.
+$$
