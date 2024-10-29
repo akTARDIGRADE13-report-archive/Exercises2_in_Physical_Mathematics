@@ -210,3 +210,12 @@ $$
 
 ## Problem 7
 
+$$
+\begin{aligned}
+\int_{-\infty}^{\infty} \dd{x} \int_{-\infty}^{\infty} \dd{y} \int_{-\infty}^{\infty} \dd{z} \frac{e^{-x^2 - y^2 - z^2}}{x^2 + y^2 + z^2} &= \int_{0}^{\infty} \dd{r} \int_{0}^{\pi} \dd{\theta} \int_{0}^{2\pi} \dd{\phi} r^2 \sin \theta \frac{e^{-r^2}}{r^2} \\
+&= 2\pi \int_{0}^{\infty} \dd{r} \int_{0}^{\pi} \dd{\theta} e^{-r^2} \sin \theta \\
+&= 4\pi \int_{0}^{\infty} \dd{r} e^{-r^2} \\
+&= 2\pi^{\frac{3}{2}}.
+\end{aligned}
+$$
+
