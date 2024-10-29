@@ -183,3 +183,30 @@ $$
 $$
 
 The interchange of the order of integration was justified by Tonelli's theorem, as the integrand is non-negative within the integration domain.
+
+## Problem 6
+
+ $e^{-x^2}$ is an even function, so
+
+$$
+\int_{0}^{\infty} e^{-x^2} \dd{x} = \frac{1}{2} \int_{-\infty}^{\infty} e^{-x^2} \dd{x}.
+$$
+
+$$
+\begin{aligned}
+\int_{-\infty}^{\infty} e^{-x^2} \dd{x} \int_{-\infty}^{\infty} e^{-y^2} \dd{y} &= \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} e^{-(x^2 + y^2)} \dd{x} \dd{y} \\
+&= \int_{0}^{2\pi} \int_{0}^{\infty} e^{-r^2} r \dd{r} \dd{\theta} \\
+&= 2\pi \int_{0}^{\infty} e^{-r^2} r \dd{r} \\
+&= 2\pi \qty[-\frac{1}{2} e^{-r^2}]_{0}^{\infty} \\
+&= \pi.
+\end{aligned}
+$$
+
+Therefore,
+
+$$
+\int_{0}^{\infty} e^{-x^2} \dd{x} = \frac{\sqrt{\pi}}{2}.
+$$
+
+## Problem 7
+
