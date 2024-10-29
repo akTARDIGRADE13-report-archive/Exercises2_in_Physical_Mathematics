@@ -171,3 +171,15 @@ $$
 I = \frac{b}{a^2 + b^2} .
 $$
 
+## Problem 5
+
+$$
+\begin{aligned}
+\int_{0}^{\infty} \frac{e^{-s}}{s} (1-e^{-s}) \dd{s} &= \int_{0}^{\infty} \int_{0}^{1} e^{-s(t+1)} \dd{t} \dd{s} \\
+&= \int_{0}^{1} \int_{0}^{\infty} e^{-s(t+1)} \dd{s} \dd{t} \\
+&= \int_{0}^{1} \frac{1}{t+1} \dd{t} \\
+&= \ln 2.
+\end{aligned}
+$$
+
+The interchange of the order of integration was justified by Tonelli's theorem, as the integrand is non-negative within the integration domain.
