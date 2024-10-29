@@ -129,4 +129,18 @@ $$
 
 ## Problem 3
 
+$$
+\begin{aligned}
+\sin x/2 \sum_{n=0}^{N-1} \cos nx &= \frac{1}{2} \sum_{n=0}^{N-1} \qty{\sin \qty(\frac{2n+1}{2}x) - \sin \qty(\frac{2n-1}{2}x)} \\
+&= \frac{1}{2} \qty{\sin \qty(\frac{2N-1}{2}x) - \sin \qty(-\frac{x}{2})} \\
+&= \frac{1}{2} \qty{\sin \qty(\frac{2N-1}{2}x) + \sin \qty(\frac{x}{2})} \\
+&= \frac{1}{2} \qty{\sin \qty(\frac{N}{2}x + \frac{N-1}{2}x) + \sin \qty(\frac{N}{2}x - \frac{N-1}{2}x)} \\
+&= \sin \frac{Nx}{2} \cos \frac{(N-1)x}{2}
+\end{aligned}
+$$
 
+Therefore,
+
+$$
+\sum_{n=0}^{N-1} \cos nx = \frac{\sin Nx/2 \cos (N-1)x/2}{\sin x/2}
+$$
